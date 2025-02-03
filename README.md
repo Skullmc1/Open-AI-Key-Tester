@@ -1,36 +1,162 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OpenAI API Key Tester
 
-## Getting Started
+A modern web application built with Next.js and TypeScript that allows users to manage and test multiple OpenAI API keys through a chat interface.
 
-First, run the development server:
+## Features
 
+- 🔑 API Key Management
+  - Add multiple API keys
+  - Edit key names
+  - Show/hide key values
+  - Delete keys
+  - Secure local storage
+  - Select active key for testing
+
+- 💬 Chat Interface
+  - Real-time chat with OpenAI API
+  - Message history
+  - Error handling
+  - Loading states
+  - Clear chat functionality
+
+- 🎨 Modern UI
+  - Dark theme
+  - Responsive design
+  - Smooth animations
+  - Interactive feedback
+  - Error notifications
+
+## Technologies Used
+
+- Next.js 13+ (App Router)
+- TypeScript
+- Tailwind CSS
+- React Icons
+- OpenAI API
+- LocalStorage for persistence
+
+## Prerequisites
+
+Before you begin, ensure you have:
+- Node.js 16.8.0 or newer
+- npm or yarn
+- An OpenAI API key
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/openai-key-tester.git
+cd openai-key-tester
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Install required packages:
+```bash
+npm install openai react-icons
+```
+
+4. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+openai-key-tester/
+├── app/
+│   ├── api/
+│   │   └── chat/
+│   │       └── route.ts
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   ├── ApiKeyManager.tsx
+│   ├── ChatSection.tsx
+│   └── Navbar.tsx
+├── types/
+│   └── index.ts
+└── public/
+```
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+1. Add a new API key:
+   - Click "Add New Key"
+   - Enter a name for the key
+   - Paste your OpenAI API key
+   - Click "Save Key"
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Test your API key:
+   - Select the key you want to test
+   - Type a message in the chat interface
+   - Send and wait for the AI response
+   - Check for any errors or successful responses
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Manage your keys:
+   - Show/hide key values using the eye icon
+   - Edit key names using the edit button
+   - Delete keys using the trash button
+   - Select different keys to test
 
-## Deploy on Vercel
+## Security Considerations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- API keys are stored in the browser's localStorage
+- Keys are never sent to any server except OpenAI
+- Consider implementing additional security measures for production use
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Error Handling
+
+The application handles various error scenarios:
+- Invalid API keys
+- Network errors
+- OpenAI API errors
+- Missing keys or permissions
+
+## Customization
+
+### Colors
+The main color scheme uses:
+- Primary: `#800020` (Maroon)
+- Background: `gray-900`
+- Text: `gray-200`
+
+To modify colors, edit the Tailwind classes in the component files.
+
+### Styling
+The UI is built with Tailwind CSS. Modify the classes in component files to change the appearance.
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- OpenAI for providing the API
+- Next.js team for the framework
+- Tailwind CSS for the styling system
+- React Icons for the icon set
+
+## Support
+
+For support, issues, or feature requests, please file an issue in the GitHub repository.
