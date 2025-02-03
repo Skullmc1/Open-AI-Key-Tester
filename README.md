@@ -1,6 +1,23 @@
-# OpenAI API Key Tester
+<div align="center">
+  <img src="public/banner.png" alt="OpenAI API Key Tester Banner" width="100%">
 
-A modern web application built with Next.js and TypeScript that allows users to manage and test multiple OpenAI API keys through a chat interface.
+  # OpenAI API Key Tester
+
+  <p align="center">
+    A modern web application for managing and testing OpenAI API keys with a sleek chat interface
+    <br />
+    <a href="#demo">View Demo</a>
+    ·
+    <a href="#installation">Installation</a>
+    ·
+    <a href="https://github.com/Skullmc1/Open-AI-Key-Tester/issues">Report Bug</a>
+  </p>
+
+  ![Next.js](https://img.shields.io/badge/Next.js-13+-000000?style=for-the-badge&logo=next.js&logoColor=white)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+  ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+  ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+</div>
 
 ## Features
 
